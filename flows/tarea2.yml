@@ -1,0 +1,71 @@
+title: "Tarea 2"
+description: |
+
+    # Tarea 2
+
+    Recuerda escribir tus soluciones usando  $\LaTeX$
+
+rules:
+    start:
+    -
+        if_before: Tarea 2
+        if_has_role: [student, ta, instructor]
+        if_has_fewer_sessions_than: 1
+        may_start_new_session: True
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+     -
+         if_before: Tarea 2
+         permissions: [view, modify, see_correctness]
+         message: "Bienvenido, tu tarea 1 está lista."
+
+     -
+         permissions: [view, see_correctness, see_answer_after_submission]
+
+    grade_identifier: tarea2
+    grade_aggregation_strategy: max_grade
+
+    grading:
+    -
+        if_completed_before: Tarea 2
+        credit_percent: 100
+
+    -
+        if_completed_before: 2018-09-15
+        credit_percent: 50
+
+    -
+        credit_percent: 0
+groups:
+-
+    id: intro
+    pages:
+    -
+        type: FileUploadQuestion
+        id: proof
+        maximum_megabytes: 8
+        value: 2.5
+        prompt: |
+
+            # Tarea 2
+
+            [acá](repocur:pdfs/Tarea2-2018.pdf)
+
+        mime_types:
+
+                - application/pdf
+
+        rubric: |
+
+            Para obtener la calificación completa deberá cumplir:
+
+            * Usar los temas vistos en clase para la solución (20%)
+            * Uso de LaTeX (30%)
+            * Correcta argumentación (30%)
+            * No tener errores en la argumentación de un problema elegido al azar (10%)
+

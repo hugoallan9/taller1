@@ -1,0 +1,14 @@
+event_kinds:
+    lecture:
+        title: Lecture {nr}
+        color: blue
+
+    exam:
+        title: Exam {nr}
+        color: red
+
+    Asueto:
+        title: Asueto {nr}
+        color: orange
+
+

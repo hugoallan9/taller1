@@ -1,0 +1,64 @@
+title: "Tarea 1"
+description: |
+
+    # Examen 1
+
+    Bienvenido al curso de Taller de matemática 2, en esta sección encontrarás los ejercicios que debes resolver para
+    tu tarea. 
+
+rules:
+
+    start:
+    -
+        if_before: 2018-12-31
+        if_has_role: [instructor]
+        if_has_fewer_sessions_than: 5
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    -
+        may_start_new_session: False
+        may_list_existing_sessions: True
+
+    access:
+     -
+         if_before: Tarea 1
+         permissions: [view, modify, see_correctness]
+         message: "Bienvenido, tu tarea 1 está lista."
+
+     -
+         permissions: [view, modify, see_correctness, see_answer_after_submission]
+
+    grade_identifier: examen1
+    grade_aggregation_strategy: max_grade
+
+    grading:
+    - credit_percent: 100
+
+
+groups:
+-
+    id: intro
+    pages:
+    -
+        type: FileUploadQuestion
+        id: examen1
+        value: 12.5
+        maximum_megabytes: 5
+        prompt: |
+            # Examen 1
+
+        mime_types:
+
+          - application/pdf
+
+
+
+        rubric: |
+
+            Para obtener la calificación completa deberá cumplir:
+
+            * Tener todas las respuestas correctas (100%)
+
+
+

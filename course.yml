@@ -1,0 +1,78 @@
+chunks:
+
+-
+    title: "M204 - Taller de matemática 2"
+    id: welcome
+    rules:
+    -
+        if_after: end_week 3
+        if_before: 2038-01-01 13:00:00 -5
+        weight: 100
+
+    -
+        weight: 0
+
+    content: |
+
+
+
+        # M103 - Taller de Matemática 1
+
+        <img src="repo:images/fractal.jpg" width = "40%" height = "40%">
+
+        ## Generalidades del curso
+        El curso M103 - Taller de Matemática 1 se imparte los días Lunes, Martes, Jueves y Viernes
+        
+        **Horario:** 10:50 a 11:40
+        
+        **Lugar:** Edificio T-3 salón 413
+
+
+
+        Puedes descargar el programa del curso [acá](repocur:pdfs/m103-P2019.pdf)
+
+        Toma en cuenta que debes cumplir con las [reglas del curso](staticpage:reglas)
+
+
+-
+    title: "Tareas"
+    id: tarea
+    rules:
+    -
+        if_after: 2019-01-31 13:00:00 -5
+        if_before: 2038-01-01 13:00:00 -5
+        weight: 100
+
+    -
+        weight: 0
+
+    content: |
+
+        ## Tareas
+        [Tarea 1](flow:tarea1)
+
+        [Tarea 2](flow:tarea2)
+
+        ## Expresión para ejercicio visto en clase
+
+        
+
+-
+    title: "Exam pointer"
+
+    id: exam_pointer
+    rules:
+    -
+        if_in_facility: test_center
+        if_after: 2015-06-01
+        weight: 200
+
+    -
+        shown: False
+        weight: 0
+
+    content: |
+
+        # Welcome to the computer-based testing facility!
+
+        <a href="flow:exam-1" class="btn btn-default">Start exam &raquo;</a>
