@@ -42,9 +42,11 @@ chunks:
         if_after: 2019-01-31 13:00:00 -5
         if_before: 2038-01-01 13:00:00 -5
         weight: 100
+        shown: True
 
     -
         weight: 0
+        shown: False
 
     content: |
 
@@ -53,7 +55,6 @@ chunks:
 
         [Tarea 2](flow:tarea2)
 
-        ## Expresión para ejercicio visto en clase
 
         
 
