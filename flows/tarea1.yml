@@ -3,7 +3,7 @@ description: |
 
     # Tarea 1
 
-    Bienvenido al curso de Taller de matemática 2, en esta sección encontrarás los ejercicios que debes resolver para
+    Bienvenido al curso de Taller de matemática 1, en esta sección encontrarás los ejercicios que debes resolver para
     tu tarea. 
 
 rules:
@@ -11,8 +11,8 @@ rules:
     -
         if_before: Tarea 1
         if_has_role: [student, ta, instructor]
-        if_has_fewer_sessions_than: 5
-        may_start_new_session: True
+        if_has_fewer_sessions_than: 1
+        may_start_new_session: False
         may_list_existing_sessions: True
 
     -
@@ -26,7 +26,7 @@ rules:
          message: "Bienvenido, tu tarea 1 está lista."
 
      -
-         permissions: [view, modify, see_correctness, see_answer_after_submission]
+         permissions: [view, see_correctness, see_answer_after_submission]
 
     grade_identifier: tarea1
     grade_aggregation_strategy: max_grade
@@ -37,7 +37,7 @@ rules:
         credit_percent: 100
 
     -
-        if_completed_before: 2018-08-15
+        if_completed_before: 2019-03-15
         credit_percent: 50
 
     -
@@ -55,12 +55,7 @@ groups:
 
             # Tarea 1
 
-            Debe realizar los ejercicios del texto *Problem-Solving strategies* de Arthur Engel. 
-
-            | Página        | Ejercicios     |
-            | ------------- |:-------------|
-            | 254      |    1,2,3,5,7,9 |
-            | 255      | 12,13,21,22,26,29,31      |
+            Puedes ver tu tarea en este [pdf](repocur:pdfs/Tarea1-2019.pdf)
 
         mime_types:
 

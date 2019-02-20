@@ -3,7 +3,7 @@ description: |
 
     # Examen 1
 
-    Bienvenido al curso de Taller de matemática 2, en esta sección encontrarás los ejercicios que debes resolver para
+    Bienvenido al curso de Taller de matemática 1, en esta sección encontrarás los ejercicios que debes resolver para
     tu tarea. 
 
 rules:
@@ -12,7 +12,7 @@ rules:
     -
         if_before: 2018-12-31
         if_has_role: [instructor]
-        if_has_fewer_sessions_than: 5
+        if_has_fewer_sessions_than: 1
         may_start_new_session: False
         may_list_existing_sessions: True
 
@@ -44,7 +44,7 @@ groups:
         type: FileUploadQuestion
         id: examen1
         value: 12.5
-        maximum_megabytes: 5
+        maximum_megabytes: 10
         prompt: |
             # Examen 1
 
@@ -58,7 +58,9 @@ groups:
 
             Para obtener la calificación completa deberá cumplir:
 
-            * Tener todas las respuestas correctas (100%)
+            * Se calificará un ejercicio al azar (50%)
+            * Se revisará el número de ejercicios realizados (40%)
+            * Tarea realizada con LaTeX (10%)
 
 
 
