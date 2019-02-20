@@ -12,7 +12,7 @@ rules:
         if_before: Tarea 1
         if_has_role: [student, ta, instructor]
         if_has_fewer_sessions_than: 1
-        may_start_new_session: False
+        may_start_new_session: True
         may_list_existing_sessions: True
 
     -
